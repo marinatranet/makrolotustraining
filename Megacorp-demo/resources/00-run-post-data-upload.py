@@ -1,6 +1,5 @@
 # Databricks notebook source
 # MAGIC %sh
-# MAGIC mkdir /dbfs/FileStore/shared_uploads/workshop_demo
 # MAGIC ls /dbfs/FileStore/shared_uploads/workshop_demo
 
 # COMMAND ----------
