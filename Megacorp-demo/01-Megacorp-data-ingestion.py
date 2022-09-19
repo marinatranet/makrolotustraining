@@ -12,25 +12,8 @@ dbutils.widgets.dropdown("reset_all_data", "false", ["true", "false"], "Reset al
 
 # COMMAND ----------
 
-display_slide('1vT0TaSyAq7LjR_NiuI2n9Ow8lJ6upN6ciJpZ8mXFZZI',2)
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC # Let's look at the raw incoming data
-
-# COMMAND ----------
-
-def display_slide(slide_id, slide_number):
-  displayHTML(f'''
-  <div style="width:2000px; margin:auto; align:left">
-  <iframe
-    src="https://docs.google.com/presentation/d/{slide_id}/embed?slide={slide_number}"
-    frameborder="0"
-    width="1150"
-    height="683"
-  ></iframe></div>
-  ''')
 
 # COMMAND ----------
 
