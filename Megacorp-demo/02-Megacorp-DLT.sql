@@ -5,29 +5,8 @@
 
 -- COMMAND ----------
 
--- DBTITLE 0,Delta Live Tables - Managed Service for ETL 
--- MAGIC %python 
--- MAGIC display_slide('1vT0TaSyAq7LjR_NiuI2n9Ow8lJ6upN6ciJpZ8mXFZZI',5)
-
--- COMMAND ----------
-
--- # %python
--- #TODO
--- #In python or SQL, rewrite the transformations from notebook 01-Megacorp-data-ingestion using DLT, and building the DLT graph
--- #Add some expectations
--- #go in Job => DLT, create your DLT pointing to your notebook
--- #help: https://docs.databricks.com/data-engineering/delta-live-tables/index.html
--- #Remember: you can use the retail DLT as example
-
--- COMMAND ----------
-
 -- MAGIC %md
 -- MAGIC # Ingest Raw data into Bronze Layer 
-
--- COMMAND ----------
-
--- MAGIC %python 
--- MAGIC display_slide('1vT0TaSyAq7LjR_NiuI2n9Ow8lJ6upN6ciJpZ8mXFZZI',4)
 
 -- COMMAND ----------
 

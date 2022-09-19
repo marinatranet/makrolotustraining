@@ -56,10 +56,6 @@ df.createOrReplaceTempView("incoming_data")
 
 # COMMAND ----------
 
-display_slide('1vT0TaSyAq7LjR_NiuI2n9Ow8lJ6upN6ciJpZ8mXFZZI',7)
-
-# COMMAND ----------
-
 # DBTITLE 1,Stream landing files from cloud storage
 #                                  Autoloader
 #                     (Use cloudFiles to initiate Autoloader)
@@ -112,11 +108,6 @@ silverDF.writeStream.format("delta").outputMode("append").trigger(once=True).opt
 
 # MAGIC %md
 # MAGIC ## 3/ Gold layer: join information on Turbine status to add a label to our dataset
-
-# COMMAND ----------
-
-#TODO: the turbine status is available under /mnt/quentin-demo-resources/turbine/status. Use dbutils.fs to display the folder content
-display(dbutils.fs.ls('/mnt/quentin-demo-resources/turbine/status'))
 
 # COMMAND ----------
 

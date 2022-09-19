@@ -106,10 +106,6 @@ spark.conf.set("spark.databricks.cloudFiles.schemaInference.sampleSize.numFiles"
 
 # COMMAND ----------
 
-path
-
-# COMMAND ----------
-
 # DBTITLE 1,Create "gold" tables for autoML(remove ID/Timestamp columns) and ML purposes
 if reset_all:
   dataset = spark.read.load(f"{bucket_name}/turbine/gold-data-for-ml")

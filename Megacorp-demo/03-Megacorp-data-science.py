@@ -1,26 +1,9 @@
 # Databricks notebook source
-def display_slide(slide_id, slide_number):
-  displayHTML(f'''
-  <div style="width:1150px; margin:auto">
-  <iframe
-    src="https://docs.google.com/presentation/d/{slide_id}/embed?slide={slide_number}"
-    frameborder="0"
-    width="1150"
-    height="683"
-  ></iframe></div>
-  ''')
-
-# COMMAND ----------
-
 dbutils.widgets.dropdown("reset_all_data", "false", ["true", "false"], "Reset all data")
 
 # COMMAND ----------
 
 # MAGIC %run ./resources/00-setup $reset_all=$reset_all_data
-
-# COMMAND ----------
-
-display_slide('1gwfXMMo7QgGagpDM5oAWM5n-CmDBgc3z', '1') #hide this code
 
 # COMMAND ----------
 
@@ -148,7 +131,3 @@ spark.udf.register("get_turbine_status", get_status_udf)
 # COMMAND ----------
 
 _sqldf.write.format("delta").mode("overwrite").saveAsTable("turbine_ml_predictions")
-
-# COMMAND ----------
-
-display_slide('1gwfXMMo7QgGagpDM5oAWM5n-CmDBgc3z', '2') #hide this code
